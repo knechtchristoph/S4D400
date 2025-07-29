@@ -1,0 +1,23 @@
+projection implementation in class ZBP_C_CKFLIGHT unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_CKFLIGHT alias Flight
+extensible
+use etag
+
+{
+  //  use create;
+  use update;
+  //  use delete;
+
+  field ( readonly ) PlaneTypeId;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+}

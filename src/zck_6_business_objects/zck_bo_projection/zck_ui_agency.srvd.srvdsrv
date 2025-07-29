@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZCK_UI_Agency {
+  expose ZCK_C_AgencyTP;
+}
